@@ -49,6 +49,8 @@ define('RECOMMENDCHAPTER_ULTIMATE_ANSWER', 42);
 function recommendchapter_supports($feature) {
 
     switch($feature) {
+		case FEATURE_MOD_ARCHETYPE:           
+			return MOD_ARCHETYPE_RESOURCE;
         case FEATURE_MOD_INTRO:
             return true;
         case FEATURE_SHOW_DESCRIPTION:
